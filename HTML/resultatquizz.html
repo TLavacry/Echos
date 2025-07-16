@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Résultat Quizz</title>
+  <link rel="stylesheet" href="../CSS/resultatquizz.css">
+</head>
+<body>
+
+  <!-- Bulles -->
+  <div class="bubble" style="top: 5%; left: 20%;"></div>
+  <div class="bubble" style="top: 20%; left: 70%;"></div>
+  <div class="bubble" style="top: 60%; left: 40%;"></div>
+  <div class="bubble" style="top: 90%; left: 10%;"></div>
+  <div class="bubble" style="top: 40%; left: 1%;"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="left-icons">
+      <div class="icon twitch"><img src="../IMAGE/mdi--twitch.svg" alt="Twitch" /></div>
+      <div class="icon youtube"><a href="resultatquizz.html"><img src="../IMAGE/mdi--youtube.svg" alt="YouTube" /></a></div>
+    </div>
+    <a href="../index.html"><div class="logo">echos</div></a>
+    <div class="menu-button" id="menuBtn">Menu</div>
+  </header>
+
+  <!-- Zone principale -->
+  <main>
+    <section class="section">
+
+      <div class="side left-side">
+        <div class="text-block">
+          <h1>On voit ça en vous</h1>
+          <div class="gif-placeholder"> <!-- GIF ou radar ici --> </div>
+        </div>
+      </div>
+
+      <div class="side right-side">
+        <div class="text-block">
+          <h1>Ce qui vous correspondrait le plus</h1>
+          <div id="carousel-container">
+            <div id="carousel" class="carousel">
+            <a href="serenite.html" class="carousel-item">Sérénité</a>
+            <a href="creativite.html" class="carousel-item">Créativité</a>
+            <a href="emerveillement.html" class="carousel-item">Émerveillement</a>
+            <a href="vengeance.html" class="carousel-item">Vengeance</a>
+            <a href="deuil.html" class="carousel-item">Deuil</a>
+            <a href="detresse.html" class="carousel-item">Détresse</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <div id="menuOverlay" class="menu-overlay">
+  <div class="menu-content" id="menuContent">
+    <a href="../index.html">Accueil</a>
+    <span class="separator">|</span>
+    <a href="serenite.html">Sérénité</a>
+    <span class="separator">|</span>
+    <a href="emerveillement.html">Émerveillement</a>
+    <span class="separator">|</span>
+    <a href="creativite.html">Créativité</a>
+    <span class="separator">|</span>
+    <a href="vengeance.html">Vengeance</a>
+    <span class="separator">|</span>
+    <a href="detresse.html">Détresse</a>
+    <span class="separator">|</span>
+    <a href="deuil.html">Deuil</a>
+  </div>
+</div>
+
+  <div class="wave" id="curseur"></div>
+  <script src="../JS/resultatquizz.js"></script>
+  
+</body>
+</html>
