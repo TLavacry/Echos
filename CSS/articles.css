@@ -168,7 +168,7 @@ main {
   cursor: pointer;
 }
 
-#article3, #article4 {
+#article3, #article4, #article7, #article8 {
   margin-left: 10vh;
 }
 
@@ -238,6 +238,18 @@ main {
   color: white;
 }
 
+p {
+  font-family: 'Lexend';
+  justify-content: center;
+font-size: 1em;
+}
+
+h2 {
+  font-family: 'SSonder';
+  justify-content: none;
+  font-size: 4em;
+}
+
 #articlePopup {
   position: fixed;
   top: 0;
@@ -255,27 +267,51 @@ main {
   display: flex;
   width: 70vw;
   height: 65vh;
-  gap: 4vh;
   z-index: 101;
-  font-size: 1.5em;
   background: linear-gradient(180deg, #25127A, #362150);
   border-radius: 2vh;
-  font-family: 'SSonder', sans-serif;
 }
 
-.popup-left, .popup-right {
+.popup-left {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 5vh;
+  height: 50vh;
+  width: 100vh;
+  overflow: auto;
 }
 
-.video-container {
-  width: 200%;
-  height: auto;
+.popup-right .video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 65vh;
+  align-items: center;
 }
+
+.popup-right video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ajuste la vidéo */
+  overflow: hidden;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#journey {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Supprime les bandes noires */
+  border-radius: 0.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .article-item {
   opacity: 0;
